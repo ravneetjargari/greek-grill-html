@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Greek Grill | Sherwood Park</title>
+    <meta property="og:title" content="The Greek Grill | Sherwood Park" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Reset -->
+    <style data-tag="reset-style-sheet">
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button { background-color: transparent; }
+      button,input,optgroup,select,textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,select { text-transform: none; }
+      button,[type="button"],[type="reset"],[type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,[type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,[type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a { color: inherit; text-decoration: inherit; }
+      pre { white-space: normal; }
+      input { padding: 2px 4px; }
+      img { display: block; }
+      details { display: block; margin: 0; padding: 0; }
+      summary::-webkit-details-marker { display: none; }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"] details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] { max-height: 1000vh; }
+      details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html { scroll-behavior: smooth; }
+    </style>
+
+    <!-- Defaults -->
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Open Sans";
+        font-size: 1rem;
+      }
+      body {
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.02em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+        fill: var(--color-on-surface);
+      }
+    </style>
+
+    <!-- Fonts + helpers (keep for same look) -->
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+
+    <!-- REQUIRED STYLES (move to head so they always apply) -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="home-container1">
+      <!-- ================= NAVIGATION ================= -->
+      <navigation-wrapper class="navigation-wrapper">
+        <div class="navigation-container1">
+          <nav class="navigation-root">
+            <div class="navigation-container">
+              <a href="index.html">
+                <div aria-label="The Greek Grill Home" class="navigation-brand">
+                  <div class="navigation-logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20m14-7V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2zm0 0v7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="section-title">The Greek Grill</span>
+                </div>
+              </a>
+
+              <div class="navigation-desktop-menu">
+                <ul class="navigation-links-list">
+                  <li>
+                    <a href="#home">
+                      <div class="navigation-link"><span>Home</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#menu">
+                      <div class="navigation-link"><span>Menu</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#location">
+                      <div class="navigation-link"><span>Hours &amp; Location</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact">
+                      <div class="navigation-link"><span>Reservations</span></div>
+                    </a>
+                  </li>
+                </ul>
+
+                
+                </a>
+              </div>
+
+              <button
+                id="navToggle"
+                aria-expanded="false"
+                aria-controls="mobileOverlay"
+                aria-label="Toggle navigation menu"
+                class="navigation-mobile-toggle"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navigation-icon-open">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+
+          <!-- Mobile Overlay -->
+          <div id="mobileOverlay" class="navigation-mobile-overlay">
+            <div class="navigation-overlay-header">
+              <a href="index.html">
+                <div aria-label="The Greek Grill Home" class="navigation-brand">
+                  <div class="navigation-logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20m14-7V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2zm0 0v7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="section-title">The Greek Grill</span>
+                </div>
+              </a>
+
+              <button id="navClose" aria-label="Close navigation menu" class="navigation-mobile-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <path d="M9 16l3-3l3 3"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+
+            <div class="navigation-overlay-content">
+              <ul class="navigation-mobile-links">
+                <li>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Home</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#menu">
+                    <div class="navigation-mobile-link">
+                      <span>Menu</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#hours">
+                    <div class="navigation-mobile-link">
+                      <span>Hours &amp; Location</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#reservations">
+                    <div class="navigation-mobile-link">
+                      <span>Reservations</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="navigation-overlay-footer">
+                <a href="#menu">
+                  <div class="btn btn-primary btn-lg">
+                    <span>Order Online Now</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigation-container2">
+            <div class="navigation-container3">
+              <style>
+                @media (prefers-reduced-motion: reduce) {
+                  .navigation-mobile-overlay { transition: none; }
+                  .navigation-link::after,
+                  .navigation-logo-icon,
+                  .navigation-mobile-link svg { transition: none; }
+                }
+              </style>
+            </div>
+          </div>
+
+          <div class="navigation-container4">
+            <div class="navigation-container5">
+              <script defer data-name="navigation-logic">
+                document.addEventListener("DOMContentLoaded", function () {
+                  (function () {
+                    const navToggle = document.getElementById("navToggle");
+                    const navClose = document.getElementById("navClose");
+                    const mobileOverlay = document.getElementById("mobileOverlay");
+                    const mobileLinks = document.querySelectorAll(".navigation-mobile-link");
+
+                    function openMenu() {
+                      mobileOverlay.classList.add("is-active");
+                      navToggle.setAttribute("aria-expanded", "true");
+                      document.body.style.overflow = "hidden";
+                    }
+
+                    function closeMenu() {
+                      mobileOverlay.classList.remove("is-active");
+                      navToggle.setAttribute("aria-expanded", "false");
+                      document.body.style.overflow = "";
+                    }
+
+                    if (navToggle) navToggle.addEventListener("click", openMenu);
+                    if (navClose) navClose.addEventListener("click", closeMenu);
+
+                    mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+                    window.addEventListener("keydown", (e) => {
+                      if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
+                        closeMenu();
+                      }
+                    });
+                  })();
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </navigation-wrapper>
+
+      <!-- ================= HERO ================= -->
+      <section id="home" class="hero-section">
+        <div class="hero-media-wrapper">
+          <img
+            src="https://images.pexels.com/photos/13983276/pexels-photo-13983276.jpeg?auto=compress&cs=tinysrgb&w=1500"
+            alt="Authentic Greek Food"
+            class="hero-bg-image"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content-outer">
+          <div class="hero-content-inner">
+            <h1 class="home-hero-title hero-title">The Greek Grill</h1>
+            <p class="home-hero-subtitle hero-subtitle">
+              Authentic Greek flavors &amp; Mediterranean hospitality in Sherwood Park.
+            </p>
+            <div class="hero-actions">
+              <a href="#menu">
+                <div class="btn btn-primary btn-lg"><span>Explore Menu</span></div>
+              </a>
+              <a href="#reservations">
+                <div class="btn btn-lg btn-outline"><span>Book a Table</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOCATION ================= -->
+      <section id="location" class="location-section">
+        <div class="location-container">
+          <div class="location-split">
+            <div class="location-info-card">
+              <h2 class="section-title">Visit Us</h2>
+              <p class="section-subtitle">Experience Greece, no passport required.</p>
+
+              <div class="location-details">
+                <div class="location-item">
+                  <div class="location-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M12 6v6l4 2"></path>
+                        <circle cx="12" cy="12" r="10"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="location-text">
+                    <span class="location-label">Today's Hours</span>
+                    <span class="location-value">11:00 AM — 10:00 PM</span>
+                  </div>
+                </div>
+
+                <div class="location-item">
+                  <div class="location-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="location-text">
+                    <span class="location-label">Our Address</span>
+                    <span class="location-value">#31 99 Wye Rd, Sherwood Park, AB T8B 1J3</span>
+                  </div>
+                </div>
+
+                <div class="location-item">
+                  <div class="location-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="location-text">
+                    <span class="location-label">Phone</span>
+                    <span class="location-value"><a href="tel:5872691880">587-269-1880</a></span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://maps.google.com/?q=99%20Wye%20Rd%20%2331%20Sherwood%20Park%20AB%20T8B%201J3" target="_blank" rel="noreferrer noopener">
+                <div class="btn btn-secondary"><span>Get Directions</span></div>
+              </a>
+            </div>
+
+            <div class="location-map-wrapper">
+              <div class="location-map-placeholder">
+                <img
+                  src="https://images.pexels.com/photos/5086612/pexels-photo-5086612.jpeg?auto=compress&cs=tinysrgb&w=1500"
+                  alt="Restaurant Interior View"
+                  class="location-map-img"
+                />
+                <div class="location-map-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FEATURES (RESTORED) ================= -->
+      <section id="menu" class="features-section">
+        <div class="features-container">
+          <div class="features-header">
+            <h2 class="section-title">Discover The Greek Grill</h2>
+            <p class="section-content">
+              Everything you need to plan your perfect Mediterranean evening.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="features-card">
+              <div class="features-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20m14-7V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2zm0 0v7">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="features-card-title">Seasonal Menu</h3>
+              <p class="section-content">
+                From fresh seafood to traditional favorites, explore our chef’s curated selections.
+              </p>
+              <a href="#menu">
+                <div class="btn btn-link"><span>View Menu</span></div>
+              </a>
+            </div>
+
+            <div class="features-card" id="reservations">
+              <div class="features-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M8 2v4m8-4v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="features-card-title">Events &amp; Booking</h3>
+              <p class="section-content">
+                Host your special moments with us. We offer private dining and custom event catering.
+              </p>
+              <a href="#reservations">
+                <div class="btn btn-link"><span>Book Now</span></div>
+              </a>
+            </div>
+
+            <div class="features-card" id="story">
+              <div class="features-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path>
+                    <path d="M6 14a12 12 0 0 0 2.4 7.2a2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14M8 6v8"></path>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="features-card-title">Our Story</h3>
+              <p class="section-content">
+                Family recipes, warm hospitality, and a love for authentic Greek flavors.
+              </p>
+              <a href="#story">
+                <div class="btn btn-link"><span>Read More</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS (RESTORED) ================= -->
+      <section class="testimonials-section">
+        <div class="testimonials-header">
+          <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonials-carousel-wrapper">
+          <div id="testimonialCarousel" class="testimonials-carousel">
+            <div class="testimonials-card">
+              <div class="testimonials-quote">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20m14-7V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2zm0 0v7"></path>
+                </svg>
+              </div>
+              <p class="testimonials-text">
+                "The flavors are incredible and the atmosphere is so welcoming. A new favorite spot!"
+              </p>
+              <div class="testimonials-author">
+                <span class="author-name">Eleni Papadopoulos</span>
+                <span class="author-meta">Local Food Critic</span>
+              </div>
+            </div>
+
+            <div class="testimonials-card">
+              <div class="testimonials-quote">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20m14-7V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2zm0 0v7"></path>
+                </svg>
+              </div>
+              <p class="testimonials-text">
+                "A hidden gem. Great service, delicious food, and a cozy vibe."
+              </p>
+              <div class="testimonials-author">
+                <span class="author-name">Marcus Reed</span>
+                <span class="author-meta">Regular Guest</span>
+              </div>
+            </div>
+
+            <div class="testimonials-card">
+              <div class="testimonials-quote">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20m14-7V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2zm0 0v7"></path>
+                </svg>
+              </div>
+              <p class="testimonials-text">
+                "Perfect for date night. Everything tasted fresh and authentic."
+              </p>
+              <div class="testimonials-author">
+                <span class="author-name">Sarah &amp; Tom</span>
+                <span class="author-meta">Anniversary Celebration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GALLERY (RESTORED) ================= -->
+      <section class="gallery-section" id="gallery">
+        <div class="gallery-header">
+  <h2 class="section-title">A Taste of the Aegean</h2>
+</div>
+
+
+        <div class="gallery-masonry">
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/7282789/pexels-photo-7282789.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Fresh Greek Salad" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/14908946/pexels-photo-14908946.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Plated Specialty" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/35290663/pexels-photo-35290663.png?auto=compress&cs=tinysrgb&w=1500" alt="Seafood Spread" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/32727455/pexels-photo-32727455.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Gyro Wrap" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/27028346/pexels-photo-27028346.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Restaurant Ambiance" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/15985012/pexels-photo-15985012.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Authentic Pasta" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT (RESTORED STYLE) ================= -->
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-card">
+            <div class="contact-header">
+              <h2 class="section-title">Get in Touch</h2>
+              <p class="section-content">Questions or special requests? We’re here to help.</p>
+            </div>
+
+            <div class="contact-info-grid">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Call Us</span>
+                  <a href="tel:5872691880">
+                    <div class="contact-link"><span>587-269-1880</span></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                      <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    </g>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Email Us</span>
+                  <a href="mailto:Thegreekgrill1631@gmail.com?subject=">
+                    <div class="contact-link"><span>Thegreekgrill1631@gmail.com</span></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-footer">
+              <a href="#reservations">
+                <div class="btn btn-accent btn-xl">
+                  <span>Reserve Your Table Now</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INTERACTIONS (RESTORED) ================= -->
+      <div class="home-container2">
+        <div class="home-container3">
+          <script defer data-name="greek-grill-interactions">
+            document.addEventListener("DOMContentLoaded", function () {
+              (function () {
+                const carousel = document.getElementById("testimonialCarousel");
+
+                if (carousel) {
+                  let isDown = false;
+                  let startX;
+                  let scrollLeft;
+
+                  carousel.addEventListener("mousedown", (e) => {
+                    isDown = true;
+                    carousel.classList.add("active");
+                    startX = e.pageX - carousel.offsetLeft;
+                    scrollLeft = carousel.scrollLeft;
+                  });
+
+                  carousel.addEventListener("mouseleave", () => {
+                    isDown = false;
+                    carousel.classList.remove("active");
+                  });
+
+                  carousel.addEventListener("mouseup", () => {
+                    isDown = false;
+                    carousel.classList.remove("active");
+                  });
+
+                  carousel.addEventListener("mousemove", (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - carousel.offsetLeft;
+                    const walk = (x - startX) * 2;
+                    carousel.scrollLeft = scrollLeft - walk;
+                  });
+                }
+
+                const galleryItems = document.querySelectorAll(".gallery-item");
+                const observerOptions = { threshold: 0.1, rootMargin: "0px" };
+
+                const galleryObserver = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.style.opacity = "1";
+                      entry.target.style.transform = "translateY(0)";
+                    }
+                  });
+                }, observerOptions);
+
+                galleryItems.forEach((item) => {
+                  item.style.opacity = "0";
+                  item.style.transform = "translateY(20px)";
+                  item.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+                  galleryObserver.observe(item);
+                });
+              })();
+            });
+          </script>
+        </div>
+      </div>
+
+      <!-- ================= FOOTER ================= -->
+      <footer-wrapper class="footer-wrapper">
+        <div class="footer-container1">
+          <footer class="footer-root">
+            <div class="footer-background-layer">
+              <img
+                src="https://images.pexels.com/photos/6327653/pexels-photo-6327653.jpeg?auto=compress&cs=tinysrgb&w=200"
+                alt="Greek Texture"
+                class="footer-bg-image"
+              />
+              <div class="footer-overlay"></div>
+            </div>
+
+            <div class="footer-container">
+              <div class="footer-top-grid">
+                <div class="footer-brand-column">
+                  <h2 class="footer-brand-title">The Greek Grill</h2>
+                  <p class="footer-brand-description">
+                    Authentic Greek cuisine made with fresh ingredients and traditional recipes.
+                  </p>
+
+                  <div class="footer-social-links">
+                    <a href="#"><div aria-label="Facebook" class="footer-social-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3"></path>
+                      </svg>
+                    </div></a>
+
+                    <a href="#"><div aria-label="Instagram" class="footer-social-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
+                        </g>
+                      </svg>
+                    </div></a>
+
+                    <a href="#"><div aria-label="Twitter" class="footer-social-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"></path>
+                      </svg>
+                    </div></a>
+                  </div>
+                </div>
+
+                <div class="footer-nav-column">
+                  <h3 class="footer-column-heading">Explore</h3>
+                  <nav class="footer-nav-list">
+                    <a href="index.html"><div class="footer-nav-link"><span>Home</span></div></a>
+                    <a href="#menu"><div class="footer-nav-link"><span>Menu</span></div></a>
+                    <a href="#reservations"><div class="footer-nav-link"><span>Reservations</span></div></a>
+                    <a href="#gallery"><div class="footer-nav-link"><span>Gallery</span></div></a>
+                  </nav>
+                </div>
+
+                <div class="footer-nav-column">
+                  <h3 class="footer-column-heading">Hours</h3>
+                  <div class="footer-hours-list">
+                    <div class="footer-hour-row">
+                      <span class="footer-day">Mon - Thu</span>
+                      <span class="footer-time">11:00 AM - 9:00 PM</span>
+                    </div>
+                    <div class="footer-hour-row">
+                      <span class="footer-day">Friday</span>
+                      <span class="footer-time">11:00 AM - 10:00 PM</span>
+                    </div>
+                    <div class="footer-hour-row">
+                      <span class="footer-day">Saturday</span>
+                      <span class="footer-time">10:00 AM - 11:00 PM</span>
+                    </div>
+                    <div class="footer-hour-row">
+                      <span class="footer-day">Sunday</span>
+                      <span class="footer-time">10:00 AM - 8:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-nav-column">
+                  <h3 class="footer-column-heading">Contact</h3>
+                  <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="footer-contact-icon">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </g>
+                      </svg>
+                      <span class="footer-contact-text">#31 99 Wye Rd, Sherwood Park, AB T8B 1J3</span>
+                    </div>
+
+                    <div class="footer-contact-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="footer-contact-icon">
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        ></path>
+                      </svg>
+                      <span class="footer-contact-text">587-269-1880</span>
+                    </div>
+
+                    <div class="footer-contact-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="footer-contact-icon">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        </g>
+                      </svg>
+                      <span class="footer-contact-text">Thegreekgrill1631@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-bottom-bar">
+                <div class="footer-copyright">
+                  <span>&copy; 2026 The Greek Grill. All rights reserved.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                    .footer-social-item, .footer-nav-link, .footer-legal-link {
+                      transition: none;
+                      transform: none !important;
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+
+            <div class="footer-container4">
+              <div class="footer-container5">
+                <script defer data-name="footer-interactions">
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const footerSocialItems = document.querySelectorAll(".footer-social-item");
+
+                      footerSocialItems.forEach((item) => {
+                        item.addEventListener("mouseenter", () => {
+                          item.style.boxShadow =
+                            "0 0 15px color-mix(in srgb, var(--color-primary) 30%, transparent)";
+                        });
+
+                        item.addEventListener("mouseleave", () => {
+                          item.style.boxShadow = "none";
+                        });
+                      });
+                    })();
+                  });
+                </script>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </footer-wrapper>
+    </div>
+  </body>
+</html>
