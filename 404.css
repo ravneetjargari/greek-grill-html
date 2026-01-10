@@ -37,26 +37,3 @@
   text-align: center;
   font-weight: 400;
 }
-/* ===== LOGO IN NAV (Greek Grill) ===== */
-.navigation-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.navigation-logo-img {
-  width: 4px;
-  height: 4px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-  border: 1px solid rgba(255,255,255,0.25);
-}
-
-@media (max-width: 768px) {
-  .navigation-logo-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-  }
-}
