@@ -1,19 +1,105 @@
-.footer-container1 {
-  display: contents;
+/* ===============================
+   FOOTER STRUCTURE FIX
+   =============================== */
+
+/* NEVER use display: contents on footer wrappers */
+.footer-container1,
+.footer-container3,
+.footer-container5 {
+  display: block;
 }
- 
-.footer-container2 {
-  display: none;
-}
- 
-.footer-container3 {
-  display: contents;
-}
- 
+
+.footer-container2,
 .footer-container4 {
   display: none;
 }
- 
-.footer-container5 {
-  display: contents;
+
+/* ===============================
+   FOOTER LAYERING (BACKGROUND + CONTENT)
+   =============================== */
+
+.footer-root {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-background-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.footer-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Bring all footer content ABOVE overlay */
+.footer-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   FOOTER TEXT VISIBILITY FIX
+   =============================== */
+
+.footer-brand-title,
+.footer-brand-description,
+.footer-column-heading,
+.footer-nav-link span,
+.footer-hour-row span,
+.footer-contact-text,
+.footer-copyright span {
+  color: #ffffff !important;
+}
+
+/* ===============================
+   FOOTER CONTACT ROW FIX
+   =============================== */
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-contact-text {
+  display: block;
+  line-height: 1.5;
+  white-space: normal;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===============================
+   FOOTER ICON VISIBILITY
+   =============================== */
+
+.footer-contact-icon,
+.footer-social-item svg {
+  color: #ffffff;
+  stroke: currentColor;
+}
+
+/* ===============================
+   ACCESSIBILITY / SAFETY
+   =============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-social-item,
+  .footer-nav-link,
+  .footer-legal-link {
+    transition: none !important;
+    transform: none !important;
+  }
 }

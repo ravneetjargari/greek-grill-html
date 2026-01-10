@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Greek Grill | Menu</title>
+    <meta property="og:title" content="The Greek Grill | Menu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <style>
+      .menu-page { max-width: 1100px; margin: 0 auto; padding: 40px 20px 70px; }
+      .menu-hero { text-align: center; margin: 12px auto 40px; }
+      .menu-hero h1 { font-size: 2.6rem; margin-bottom: 8px; }
+      .menu-hero p { opacity: 0.85; max-width: 780px; margin: 0 auto; }
+
+      .menu-actions {
+        display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 18px;
+      }
+      .menu-actions a {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 12px 18px; border-radius: 14px; font-weight: 700;
+      }
+      .menu-actions .primary { background: var(--color-primary, #d4af37); color: var(--color-on-primary, #111); }
+      .menu-actions .ghost { border: 1px solid rgba(255,255,255,0.22); color: inherit; }
+
+      .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+      @media (max-width: 900px) { .menu-grid { grid-template-columns: 1fr; } }
+
+      .menu-section {
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 18px;
+        padding: 18px 18px 8px;
+        background: color-mix(in srgb, var(--color-surface) 86%, transparent);
+      }
+      .menu-section h2 {
+        font-size: 1.35rem;
+        margin-bottom: 14px;
+        display: inline-block;
+        padding-bottom: 6px;
+        border-bottom: 2px solid var(--color-primary, #d4af37);
+      }
+
+      .menu-item {
+        display: flex; justify-content: space-between; gap: 16px;
+        padding: 12px 0;
+        border-bottom: 1px dashed rgba(255,255,255,0.18);
+      }
+      .menu-item:last-child { border-bottom: none; }
+
+      .item-name { font-weight: 700; }
+      .item-desc { opacity: 0.85; margin-top: 4px; font-size: 0.95rem; }
+      .item-price { font-weight: 800; white-space: nowrap; }
+
+      @media (max-width: 700px) {
+        .menu-item { flex-direction: column; }
+        .item-price { margin-top: 6px; }
+      }
+
+      .menu-note { margin-top: 26px; opacity: 0.8; text-align: center; }
+    </style>
+  </head>
+
+  <body>
+    <div class="home-container1">
+      <!-- Injected NAV -->
+      <div id="site-nav"></div>
+
+      <main class="menu-page">
+        <header class="menu-hero">
+          <h1>Our Menu</h1>
+          <p>Authentic Greek flavours, Mediterranean hospitality, made fresh to order.</p>
+
+          <div class="menu-actions">
+            <a class="primary" href="assets/menu.pdf" target="_blank" rel="noopener">Printable Menu (PDF)</a>
+            <a class="ghost" href="index.html#reservations">Reservations</a>
+            <a class="ghost" href="index.html#location">Hours &amp; Location</a>
+          </div>
+        </header>
+
+        <!-- Replace items/prices with your real menu -->
+        <div class="menu-grid">
+          <section class="menu-section">
+            <h2>Appetizers</h2>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Spanakopita</div>
+                <div class="item-desc">Spinach and feta wrapped in flaky phyllo pastry</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Dolmades</div>
+                <div class="item-desc">Grape leaves stuffed with seasoned rice</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>Greek Pitas</h2>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Chicken Souvlaki Pita</div>
+                <div class="item-desc">Grilled chicken, tzatziki, tomato, onion</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Gyro Pita</div>
+                <div class="item-desc">Traditional gyro meat, tzatziki, tomato, onion</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>Plates &amp; Grill</h2>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Chicken Souvlaki Plate</div>
+                <div class="item-desc">Rice, potatoes, salad, pita &amp; tzatziki</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Lamb Souvlaki Plate</div>
+                <div class="item-desc">Tender marinated lamb skewers, flame grilled</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>Salads</h2>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Greek Salad</div>
+                <div class="item-desc">Tomatoes, cucumber, olives, feta &amp; oregano</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>Pasta &amp; Pizza</h2>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Greek Style Pizza</div>
+                <div class="item-desc">Mozzarella, house sauce, fresh toppings</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>Desserts</h2>
+
+            <div class="menu-item">
+              <div>
+                <div class="item-name">Baklava</div>
+                <div class="item-desc">Layered phyllo, nuts &amp; honey syrup</div>
+              </div>
+              <div class="item-price">$—</div>
+            </div>
+          </section>
+        </div>
+
+        <p class="menu-note">To update items/prices, just edit this page.</p>
+      </main>
+
+      <!-- Injected FOOTER -->
+      <div id="site-footer"></div>
+
+      <script>
+        async function inject(id, file) {
+          const host = document.getElementById(id);
+          if (!host) return;
+          const res = await fetch(file, { cache: "no-cache" });
+          host.innerHTML = await res.text();
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          inject("site-nav", "components/navigation.html");
+          inject("site-footer", "components/footer.html");
+        });
+      </script>
+    </div>
+  </body>
+</html>
