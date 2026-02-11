@@ -149,4 +149,38 @@
 .hero-content-inner {
   gap: 10px;
 }
+/* ================= STICKY ORDER BUTTON ================= */
+
+.sticky-order-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #C6A75E, #A8863E);
+  color: #fff;
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.sticky-order-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(135deg, #2f1ee2, #2018c5);
+}
+
+/* Mobile Full Width Version */
+@media (max-width: 768px) {
+  .sticky-order-btn {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    text-align: center;
+    border-radius: 14px;
+  }
+}
 
